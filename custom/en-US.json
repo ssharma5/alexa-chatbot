@@ -1,0 +1,345 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "day",
+              "elicitationRequired": true,
+              "type": "AMAZON.Ordinal",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.172062560679.1606607932216"
+              }
+            },
+            {
+              "name": "month",
+              "elicitationRequired": true,
+              "type": "AMAZON.Month",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.172062560679.1517916950887"
+              }
+            },
+            {
+              "name": "year",
+              "elicitationRequired": true,
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.172062560679.291364859270"
+              }
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "cuisine",
+              "elicitationRequired": true,
+              "type": "AMAZON.Food",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.592921767637.1716144003541"
+              }
+            },
+            {
+              "name": "location",
+              "elicitationRequired": true,
+              "type": "AMAZON.City",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.592921767637.1566630738240"
+              }
+            },
+            {
+              "name": "costType",
+              "elicitationRequired": true,
+              "type": "costType",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.592921767637.1522376432099"
+              }
+            }
+          ],
+          "name": "FindRestaurantIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "samples": [
+                "{day}"
+              ]
+            },
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "samples": [
+                "it is {month}",
+                "{month}"
+              ]
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": [
+                "it is {year}",
+                "{year}"
+              ]
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "samples": [
+            "it is {month} {day} {year}",
+            "my birth date is {month} {day} {year}",
+            "I was born on {month} {day}  {year}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "cuisine",
+              "type": "AMAZON.Food",
+              "samples": [
+                "{cuisine}",
+                "I want a {cuisine} restaurant",
+                "Where can I get {cuisine} food",
+                "I\u0027m craving {cuisine}",
+                "i like {cuisine} food"
+              ]
+            },
+            {
+              "name": "location",
+              "type": "AMAZON.City",
+              "samples": [
+                "show me places at {location}",
+                "{location}",
+                "Find me a {cuisine} restaurant in {location}",
+                "I\u0027m looking in {location}"
+              ]
+            },
+            {
+              "name": "costType",
+              "type": "costType",
+              "samples": [
+                "give me {costType} one\u0027s",
+                "i am looking for  {costType}",
+                "Get me a {costType} place",
+                "Find me a {costType} {cuisine} restaurant"
+              ]
+            }
+          ],
+          "name": "FindRestaurantIntent",
+          "samples": [
+            "Find me a {cuisine} restaurant in {location} with a {costType} budget",
+            "Show me an {cuisine} restaurant in {location} with a {costType} price range",
+            "I need a {costType} {cuisine} restaurant in {location}",
+            "Can you suggest a {costType} {cuisine} restaurant in {location}",
+            "Find a {costType} {cuisine} restaurant in {location}",
+            "Recommend a {costType} {cuisine} restaurant in {location}",
+            "Give me a {costType} {cuisine} restaurant in {location}",
+            "Find a {costType} {cuisine} restaurant in {location} now",
+            "I want a {costType} {cuisine} restaurant in {location}",
+            "Show me a {costType} {cuisine} restaurant in {location}",
+            "Where can I find a {costType} {cuisine} restaurant in {location}",
+            "Can you find me a {costType} {cuisine} restaurant in {location}",
+            "I am looking for a {costType} {cuisine} restaurant in {location}",
+            "Tell me about a {costType} {cuisine} restaurant in {location}",
+            "Help me find a {costType} {cuisine} restaurant in {location}",
+            "Suggest a {costType} {cuisine} restaurant in {location}",
+            "I need a {cuisine} restaurant in {location} with {costType} pricing",
+            "Find a {cuisine} restaurant in {location} that fits my {costType} budget",
+            "Show me a {cuisine} restaurant in {location} with {costType} pricing",
+            "Find me a {cuisine} restaurant in {location} with a {costType} budget",
+            "Suggest a {costType} {cuisine} restaurant in {location} for me",
+            "I want a {cuisine} restaurant in {location} with {costType} pricing",
+            "Help me with a {costType} {cuisine} restaurant in {location}",
+            "Show me an {cuisine} restaurant in {location} with {costType} budget",
+            "Find me a {costType} {cuisine} restaurant in {location} today",
+            "Can you find a {costType} {cuisine} restaurant in {location}",
+            "Show me an {cuisine} restaurant in {location} with {costType} pricing",
+            "Can you suggest a {costType} {cuisine} restaurant in {location}",
+            "I need a {cuisine} restaurant in {location} with {costType} budget",
+            "Find me a {cuisine} restaurant in {location} with a {costType} pricing",
+            "I want a {costType} {cuisine} restaurant in {location}",
+            "Help me find a {cuisine} restaurant in {location} with {costType} budget",
+            "Can you suggest a {cuisine} restaurant in {location} with {costType} budget",
+            "I need a {cuisine} restaurant in {location} with {costType} pricing",
+            "Show me a {cuisine} restaurant in {location} with {costType} budget",
+            "Find an {cuisine} restaurant in {location} with {costType} budget",
+            "Suggest a {cuisine} restaurant in {location} with {costType} budget",
+            "Where can I find a {cuisine} restaurant in {location} with {costType} budget",
+            "Show me a {costType} {cuisine} restaurant in {location} today",
+            "Can you help me find a {cuisine} restaurant in {location} with {costType} pricing",
+            "Find me a {cuisine} restaurant in {location} with {costType} budget",
+            "Suggest a {cuisine} restaurant in {location} with {costType} pricing",
+            "I need a {costType} {cuisine} restaurant in {location} for lunch",
+            "Find a {cuisine} restaurant in {location} with {costType} budget for dinner",
+            "Show me a {cuisine} restaurant in {location} with {costType} pricing for dinner",
+            "Can you find an {cuisine} restaurant in {location} with {costType} budget",
+            "Recommend a {costType} {cuisine} restaurant in {location}",
+            "Find a {cuisine} restaurant in {location} with {costType} pricing",
+            "Help me find a {cuisine} restaurant in {location} with {costType} pricing",
+            "Show me an {cuisine} restaurant in {location} with a {costType} budget",
+            "show me and {costType} restaurant"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "year",
+                  "YEAR"
+                ],
+                "value": "year"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Month"
+                ],
+                "value": "month"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Day"
+                ],
+                "value": "day"
+              }
+            }
+          ],
+          "name": "CaptureZodiacSignIntentSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "budget",
+                  "cheap"
+                ],
+                "value": "low"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "moderate",
+                  "mid",
+                  "average"
+                ],
+                "value": "medium"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "premium",
+                  "expensive"
+                ],
+                "value": "high"
+              }
+            }
+          ],
+          "name": "costType"
+        }
+      ],
+      "invocationName": "get my project"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what day you were born"
+          }
+        ],
+        "id": "Elicit.Slot.172062560679.1606607932216"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what month were you born"
+          }
+        ],
+        "id": "Elicit.Slot.172062560679.1517916950887"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what year were you born"
+          }
+        ],
+        "id": "Elicit.Slot.172062560679.291364859270"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What type of cuisine would you like?"
+          }
+        ],
+        "id": "Elicit.Slot.592921767637.1716144003541"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Where would you like to eat?"
+          }
+        ],
+        "id": "Elicit.Slot.592921767637.1566630738240"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like a cheap, medium, or expensive place?"
+          }
+        ],
+        "id": "Elicit.Slot.592921767637.1522376432099"
+      }
+    ]
+  }
+}
