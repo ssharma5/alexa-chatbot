@@ -1,0 +1,46 @@
+city,cuisine,cost_type,restaurant_name
+Mumbai,Italian,low,Oliva Restaurant
+Mumbai,Italian,medium,La Pasta World
+Mumbai,Italian,high,Fiorella
+Mumbai,Chinese,low,Chinatown Express
+Mumbai,Chinese,medium,Dragon Wok
+Mumbai,Chinese,high,Szechuan Palace
+Mumbai,Indian,low,Spicy Kitchen
+Mumbai,Indian,medium,The Royal Indian
+Mumbai,Indian,high,Indian Rasoi
+Delhi,Italian,low,Trattoria
+Delhi,Italian,medium,La Dolce Vita
+Delhi,Italian,high,La Piazza
+Delhi,Chinese,low,Wok N Roll
+Delhi,Chinese,medium,Golden Dragon
+Delhi,Chinese,high,The China Garden
+Delhi,Indian,low,Shahi Dastarkhwan
+Delhi,Indian,medium,Paratha Wali Gali
+Delhi,Indian,high,The Indian Grill
+Kolkata,Italian,low,Foodie's Heaven
+Kolkata,Italian,medium,Bella Italia
+Kolkata,Italian,high,The Italian Kitchen
+Kolkata,Chinese,low,Chopsticks
+Kolkata,Chinese,medium,Hunan
+Kolkata,Chinese,high,Lunar House
+Kolkata,Indian,low,Kolkata Zaika
+Kolkata,Indian,medium,The Spice Room
+Kolkata,Indian,high,Calcutta Cuisine
+Bangalore,Italian,low,Little Italy
+Bangalore,Italian,medium,The Pizzeria
+Bangalore,Italian,high,Italiano
+Bangalore,Chinese,low,The Golden Wok
+Bangalore,Chinese,medium,Dragon Chinese
+Bangalore,Chinese,high,China Town
+Bangalore,Indian,low,Shiv Sagar
+Bangalore,Indian,medium,Annapurna
+Bangalore,Indian,high,Indian Delight
+Chennai,Italian,low,Pizza Corner
+Chennai,Italian,medium,Pasta House
+Chennai,Italian,high,The Italian Bistro
+Chennai,Chinese,low,Chili's
+Chennai,Chinese,medium,Dragonfly
+Chennai,Chinese,high,Sichuan Delight
+Chennai,Indian,low,Chennai Tiffin
+Chennai,Indian,medium,Anand Bhavan
+Chennai,Indian,high,Chettinad Kitchen
